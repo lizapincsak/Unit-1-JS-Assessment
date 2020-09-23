@@ -107,9 +107,16 @@ console.log(totalSpots());
  * Given film #7, expected error: `There are only 3 Star Wars movies. Flan fiction excluded.`
 */
 function getNthFilm(character, filmNumber) {
-  for(let i = 1; i = character )
-  if (filmNumber === 1)
-  return film[i]
+  for(let i = 1; i <=character.length; i++)
+  if (filmNumber === 1){
+    return `${starships.films} is the first film`;
+  } else if (filmNumber === 2){
+    return `${starships.films} is the second film`;
+  } else if (filmNumber ===3){
+    return `${starships.films} is the third film`
+  } else{
+    return `ERROR: There are only 3 Star Wars movies. Flan fiction excluded.`
+  }
 }
 
 /**
